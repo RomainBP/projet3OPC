@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<title>ohmyfood</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <img src="images\logo\ohmyfood.png" class="header__logo" alt="logo du site" />
+    </header>
+    <main>
+        <section class="localisation">
+            <form class="localisation__form" method="post" action="rechercheville.php">
+				<div class="iconsearch">
+					<i class="fa-solid fa-location-dot fa-sm" aria-hidden="true"></i>
+				</div>
+				<input class="localisation__form__input" type="search" name="Rechercher" id="Rechercher" value="Paris, Belleville" />
+            </form>
+        </section>
+        <section class="reservation"> 
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
+            <button class="button"><a href="#">Explorer nos restaurants</a></button>  
+        </section>
+        <section class="explication">
+            <h1>Fonctionnement</h1>
+            <div class="step">
+                <div class="step__circle">1</div>
+                <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                <p class="step__text">Choississez un restaurant</p>
+            </div>    
+            <div class="step">
+                <div class="step__circle">2</div>
+                <i class="fa-solid fa-list fa-sm" aria-hidden="true"></i>
+                <p class="step__text">Composez votre menu</p>
+            </div>   
+            <div class="step">
+                <div class="step__circle">3</div>
+                <i class="fa-solid fa-store fa-sm" aria-hidden="true"></i>
+                <p class="step__text">Dégustez au restaurant</p>
+            </div>   
+        </section>
+
+
+    </main>
+
+</body>
