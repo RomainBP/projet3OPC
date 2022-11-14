@@ -9,17 +9,21 @@ a{
 	cursor: pointer;
 }
 h1{
-	font-family: 'Shkrihand';
 	margin: 10px;
 }
 
 h2 {
     font-weight: normal;
     font-size: 1em;
-	font-family: 'Shrikhand', cursive;
-	margin: 10px;
+	margin: 0;
+	font-weight: bold;
+	
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
+}
+
+img {
+	object-fit: cover;
 }
