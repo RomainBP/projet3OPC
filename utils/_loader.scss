@@ -1,0 +1,32 @@
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, $colour-secondary, $colour-primary);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader 3000ms;
+    animation-fill-mode: both;
+    i{
+        animation: rotate 2500ms;
+        &::before{
+            font-size: 100px;
+            background: linear-gradient(0deg, #99e2d0, #008766);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border: 1px solid $colour-tertiary;
+            padding: 50px;
+            border-radius: 50%;
+
+        }
+        &::after{
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-top: 2px solid $colour-tertiary;
+        }
+    }
+}

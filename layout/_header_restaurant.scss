@@ -1,0 +1,16 @@
+.header_restaurant{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    a {
+        position: absolute;
+        left: 30px;
+    } 
+    .header__logo{
+        width: 50%;
+    }
+}
+
