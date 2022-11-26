@@ -4,7 +4,7 @@
 @import "./utils/breakpoints";
 @import "./base/base";
 @import "./components/buttons";
-@import "./layout/header__restaurant";
+@import "./layout/header";
 @import "./layout/footer";
 
 .pic__content{
@@ -63,30 +63,43 @@
                     border-bottom: 2px solid #99E2D0;
                 }
             }
-            .menu__choice{
-                border-radius: 20px;
-                padding: 10px;
-                background-color: white;
-                margin: 10px 0;
-                p {
-                    font-weight: bold;
-                    margin: 0;
-                    padding: 5px;
-                }
-                .menu__choice__details{
+            .menu__c{
+                @include desktop-only{
                     display: flex;
-                    justify-content: space-between;
-                    p{
-                        margin: 0;
-                        font-weight: normal;
-                        color: dimgray;
+                    gap: 30px;
+                }
+                .menu__choice{
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: white;
+                    margin: 10px 0;
+                    box-shadow: 0px 6px 17px rgb(0 0 0 / 25%);
+                    &:hover{
+                        box-shadow: 0px 6px 17px rgb(0 0 0 / 50%);
                     }
-                    .price{
+                    @include desktop-only{
+                        width: 30%;
+                    }
+                    p {
                         font-weight: bold;
-                        color: black;
+                        margin: 0;
+                        padding: 5px;
+                    }
+                    .menu__choice__details{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            margin: 0;
+                            font-weight: normal;
+                            color: dimgray;
+                        }
+                        .price{
+                            font-weight: bold;
+                            color: black;
+                        }
                     }
                 }
-            }
+            }    
         }
     }
     .button__content{
