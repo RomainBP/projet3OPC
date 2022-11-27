@@ -69,39 +69,94 @@
                     gap: 30px;
                 }
                 .menu__choice{
+                    height: 70px;
+                    display: flex;
+                    justify-content: space-between;
                     border-radius: 20px;
-                    padding: 10px;
                     background-color: white;
                     margin: 10px 0;
                     box-shadow: 0px 6px 17px rgb(0 0 0 / 25%);
+                    overflow: hidden;
+                    animation: menu 2000ms;
+                    animation-fill-mode: both;
+                        @for $i from 1 through 4 {
+                           &--#{$i}{
+                            animation-delay: 200ms*$i;
+                           }
+                        }
                     &:hover{
                         box-shadow: 0px 6px 17px rgb(0 0 0 / 50%);
+                        .checked__menu{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            animation: apparition 500ms cubic-bezier(.01,.99,.36,.95);
+                            i {
+                                animation: rotate 1000ms;
+                                animation-direction: alternate;
+                            }
+                        }
+                        .menu__choice__info{
+                            width: 80%;
+                        }
                     }
                     @include desktop-only{
                         width: 30%;
                     }
-                    p {
-                        font-weight: bold;
-                        margin: 0;
-                        padding: 5px;
-                    }
-                    .menu__choice__details{
-                        display: flex;
-                        justify-content: space-between;
-                        p{
-                            margin: 0;
-                            font-weight: normal;
-                            color: dimgray;
-                        }
-                        .price{
+                    .menu__choice__info{
+                        padding: 10px;
+                        width: 100%;
+                        p {
+                            width: 100%;
                             font-weight: bold;
-                            color: black;
+                            margin: 0;
+                            padding: 5px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        .menu__choice__details{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                                p{
+                                    margin: 0;
+                                    font-weight: normal;
+                                    color: dimgray;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    width: 85%;
+                                }
+                                .price{
+                                    font-weight: bold;
+                                    color: black;
+                                    width: 15%;
+                                    overflow: visible;
+                                }
+                            }
+                        }
+                    }    
+                    .checked__menu{
+                        width: 20%;
+                        height: 100%;
+                        background-color: #99E2D0;
+                        display: none;
+                        border-radius: 0 20px 20px 0;
+                        i {
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #99E2D0;
+                            background-color: white;
                         }
                     }
                 }
             }    
         }
-    }
     .button__content{
         display: flex;
         justify-content: center;
