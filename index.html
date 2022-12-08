@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width"/>
-	<title>ohmyfood</title>
-	<link rel="stylesheet" type="text/css" href="dist/normalize.css">
-	<link rel="stylesheet" type="text/css" href="dist/index.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ohmyfood</title>
+    <link rel="stylesheet" type="text/css" href="dist/normalize.css">
+    <link rel="stylesheet" type="text/css" href="dist/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,21 +20,22 @@
         <i class="fa-solid fa-bowl-food fa-2xl"></i>
     </section>
     <header class="header">
-        <img src="images\logo\ohmyfood.png" class="header__logo" alt="logo du site" />
+        <img src="images/logo/ohmyfood.png" class="header__logo" alt="logo du site" />
     </header>
     <main>
         <section class="localisation">
             <form class="localisation__form" method="post" action="rechercheville.php">
-				<div class="iconsearch">
-					<i class="fa-solid fa-location-dot fa-sm" aria-hidden="true"></i>
-				</div>
-				<input class="localisation__form__input" type="search" name="Rechercher" id="Rechercher" value="Paris, Belleville" />
+                <div class="iconsearch">
+                    <i class="fa-solid fa-location-dot fa-sm" aria-hidden="true"></i>
+                </div>
+                <input class="localisation__form__input" type="search" name="Rechercher" id="Rechercher"
+                    value="Paris, Belleville" />
             </form>
         </section>
-        <section class="reservation"> 
+        <section class="reservation">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
-            <button class="button"><a href="#restaurant">Explorer nos restaurants</a></button>  
+            <a href="#restaurant" class="button">Explorer nos restaurants</a>
         </section>
         <section class="explication">
             <h1>Fonctionnement</h1>
@@ -40,17 +44,17 @@
                     <div class="step__circle">1</div>
                     <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
                     <p class="step__text">Choississez un restaurant</p>
-                </div>    
+                </div>
                 <div class="step">
                     <div class="step__circle">2</div>
                     <i class="fa-solid fa-list fa-sm" aria-hidden="true"></i>
                     <p class="step__text">Composez votre menu</p>
-                </div>   
+                </div>
                 <div class="step">
                     <div class="step__circle">3</div>
                     <i class="fa-solid fa-store fa-sm" aria-hidden="true"></i>
                     <p class="step__text">Dégustez au restaurant</p>
-                </div>   
+                </div>
             </div>
         </section>
         <section class="restaurant" id="restaurant">
@@ -59,7 +63,8 @@
                 <a href="html/lapalettedugout.html">
                     <div class="restaurant__card">
                         <div class="restaurant__card__picture">
-                            <img src="images\restaurants\Lapalettedugout.jpg" class="restaurant_pic" alt="photo de plat" />
+                            <img src="images/restaurants/Lapalettedugout.jpg" class="restaurant_pic"
+                                alt="photo de plat" />
                             <p class="new__text">Nouveau</p>
                         </div>
                         <div class="restaurant__card__info">
@@ -67,18 +72,18 @@
                                 <h2>La palette du goût</h2>
                                 <p class="city">Ménilmontant</p>
                             </div>
-                            <label class="heart__checkbox">
-                                <input type="checkbox" class="input__checkbox"/>
-                                <i class="fa-regular fa-heart fa-lg unchecked" aria-hidden="true"></i>
-                                <i class="fa-solid fa-heart fa-lg checked" aria-hidden="true"></i>
-                            </label>
+                            <div class="heart__checkbox">
+                                <i class="fa-regular fa-heart fa-lg unchecked"></i>
+                                <i class="fa-solid fa-heart fa-lg checked"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
                 <a href="html/lanoteenchantee.html">
                     <div class="restaurant__card">
                         <div class="restaurant__card__picture">
-                            <img src="images\restaurants\Lanoteenchantee.jpg" class="restaurant_pic" alt="photo de plat" />
+                            <img src="images/restaurants/Lanoteenchantee.jpg" class="restaurant_pic"
+                                alt="photo de plat" />
                             <p class="new__text">Nouveau</p>
                         </div>
                         <div class="restaurant__card__info">
@@ -86,54 +91,52 @@
                                 <h2>La note enchantée</h2>
                                 <p class="city">Charonne</p>
                             </div>
-                            <label class="heart__checkbox">
-                                <input type="checkbox" class="input__checkbox"/>
+                            <div class="heart__checkbox">
                                 <i class="fa-regular fa-heart fa-lg unchecked" aria-hidden="true"></i>
                                 <i class="fa-solid fa-heart fa-lg checked" aria-hidden="true"></i>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </a>
                 <a href="html/alafrançaise.html">
                     <div class="restaurant__card">
                         <div class="restaurant__card__picture">
-                            <img src="images\restaurants\Alafrançaise.jpg" class="restaurant_pic" alt="photo de plat" />
+                            <img src="images/restaurants/Alafrançaise.jpg" class="restaurant_pic" alt="photo de plat" />
                         </div>
                         <div class="restaurant__card__info">
                             <div class="restaurant__card__info__text">
                                 <h2>À la française</h2>
                                 <p class="city">Cité Rouge</p>
                             </div>
-                            <label class="heart__checkbox">
-                                <input type="checkbox" class="input__checkbox"/>
+                            <div class="heart__checkbox">
                                 <i class="fa-regular fa-heart fa-lg unchecked" aria-hidden="true"></i>
                                 <i class="fa-solid fa-heart fa-lg checked" aria-hidden="true"></i>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </a>
                 <a href="html/ledelicedessens.html">
                     <div class="restaurant__card">
                         <div class="restaurant__card__picture">
-                            <img src="images\restaurants\Ledelicedessens.jpg" class="restaurant_pic" alt="photo de plat" />
+                            <img src="images/restaurants/Ledelicedessens.jpg" class="restaurant_pic"
+                                alt="photo de plat" />
                         </div>
                         <div class="restaurant__card__info">
                             <div class="restaurant__card__info__text">
                                 <h2>Le délice des sens</h2>
                                 <p class="city">Folie-Méricourt</p>
                             </div>
-                            <label class="heart__checkbox">
-                                <input type="checkbox" class="input__checkbox"/>
+                            <div class="heart__checkbox">
                                 <i class="fa-regular fa-heart fa-lg unchecked" aria-hidden="true"></i>
                                 <i class="fa-solid fa-heart fa-lg checked" aria-hidden="true"></i>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </a>
-            </div>    
+            </div>
         </section>
         <section class="footer">
-            <img src="images\logo\ohmyfood@2x.svg" class="footer__logo" alt="logo du site" />
+            <img src="images/logo/ohmyfood@2x.svg" class="footer__logo" alt="logo du site" />
             <nav class="footer__nav">
                 <ul>
                     <li>
@@ -155,4 +158,5 @@
         </section>
     </main>
 </body>
+
 </html>

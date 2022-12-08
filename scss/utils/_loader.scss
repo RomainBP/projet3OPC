@@ -1,4 +1,4 @@
-.loader{
+.loader {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -9,9 +9,11 @@
     justify-content: center;
     animation: loader 3000ms;
     animation-fill-mode: both;
-    i{
+
+    i {
         animation: rotate 2500ms;
-        &::before{
+
+        &::before {
             font-size: 100px;
             background: linear-gradient(0deg, #99e2d0, #008766);
             background-clip: text;
@@ -22,7 +24,8 @@
             border-radius: 50%;
 
         }
-        &::after{
+
+        &::after {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

@@ -7,68 +7,82 @@
 @import "./layout/header";
 @import "./layout/footer";
 
-.pic__content{
+.pic__content {
     height: 250px;
     position: relative;
     z-index: -10;
-    .restaurant__mainpic{
-    width: 100%;
-    height: 350px;
+
+    .restaurant__mainpic {
+        width: 100%;
+        height: 350px;
     }
 }
+
 .restaurant {
     background-color: whitesmoke;
     border-radius: 25px 25px 0px 0px;
     padding: 10px;
-    .restaurant__title{
+
+    .restaurant__title {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 10px;
-        .restaurant__name{
+
+        .restaurant__name {
             font-family: "Shrikhand";
             font-size: 1.5em;
         }
-        .heart__checkbox input[type="checkbox"]{
+
+        .heart__checkbox input[type="checkbox"] {
             display: none;
         }
+
         .checked {
             display: none;
             margin: 10px;
-            &:before{
+
+            &:before {
                 background: linear-gradient(0deg, $colour-secondary, $colour-primary);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
+
         .unchecked {
             margin: 10px;
         }
-        input[type="checkbox"]:checked~.checked{
+
+        input[type="checkbox"]:checked~.checked {
             display: inline-block;
             animation: progress__heart 1000ms;
         }
-        input[type="checkbox"]:checked~.unchecked{
+
+        input[type="checkbox"]:checked~.unchecked {
             display: none;
         }
     }
-    .restaurant__menu{
-        .restaurant__menu__step{
-            .menu__title{
+
+    .restaurant__menu {
+        .restaurant__menu__step {
+            .menu__title {
                 font-weight: lighter;
                 margin: 20px 0;
-                .underline{
+
+                .underline {
                     padding-bottom: 3px;
                     border-bottom: 2px solid #99E2D0;
                 }
             }
-            .menu__c{
-                @include desktop-only{
+
+            .menu__c {
+                @include desktop-only {
                     display: flex;
                     gap: 30px;
                 }
-                .menu__choice{
+
+                .menu__choice {
                     height: 70px;
                     display: flex;
                     justify-content: space-between;
@@ -79,33 +93,41 @@
                     overflow: hidden;
                     animation: menu 2000ms;
                     animation-fill-mode: both;
-                        @for $i from 1 through 4 {
-                           &--#{$i}{
+
+                    @for $i from 1 through 4 {
+                        &--#{$i} {
                             animation-delay: 200ms*$i;
-                           }
                         }
-                    &:hover{
+                    }
+
+                    &:hover {
                         box-shadow: 0px 6px 17px rgb(0 0 0 / 50%);
-                        .checked__menu{
+
+                        .checked__menu {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            animation: apparition 500ms cubic-bezier(.01,.99,.36,.95);
+                            animation: apparition 500ms cubic-bezier(.01, .99, .36, .95);
+
                             i {
                                 animation: rotate 1000ms;
                                 animation-direction: alternate;
                             }
                         }
-                        .menu__choice__info{
+
+                        .menu__choice__info {
                             width: 80%;
                         }
                     }
-                    @include desktop-only{
+
+                    @include desktop-only {
                         width: 30%;
                     }
-                    .menu__choice__info{
+
+                    .menu__choice__info {
                         padding: 10px;
                         width: 100%;
+
                         p {
                             width: 100%;
                             font-weight: bold;
@@ -115,51 +137,57 @@
                             white-space: nowrap;
                             overflow: hidden;
                         }
-                        .menu__choice__details{
+
+                        .menu__choice__details {
                             display: flex;
                             justify-content: space-between;
                             width: 100%;
-                                p{
-                                    margin: 0;
-                                    font-weight: normal;
-                                    color: dimgray;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                    overflow: hidden;
-                                    width: 85%;
-                                }
-                                .price{
-                                    font-weight: bold;
-                                    color: black;
-                                    width: 15%;
-                                    overflow: visible;
-                                }
+
+                            p {
+                                margin: 0;
+                                font-weight: normal;
+                                color: dimgray;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                width: 85%;
                             }
-                        }
-                    }    
-                    .checked__menu{
-                        width: 20%;
-                        height: 100%;
-                        background-color: #99E2D0;
-                        display: none;
-                        border-radius: 0 20px 20px 0;
-                        i {
-                            height: 20px;
-                            width: 20px;
-                            border-radius: 50%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: #99E2D0;
-                            background-color: white;
+
+                            .price {
+                                font-weight: bold;
+                                color: black;
+                                width: 15%;
+                                overflow: visible;
+                            }
                         }
                     }
                 }
-            }    
+
+                .checked__menu {
+                    width: 20%;
+                    height: 100%;
+                    background-color: #99E2D0;
+                    display: none;
+                    border-radius: 0 20px 20px 0;
+
+                    i {
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #99E2D0;
+                        background-color: white;
+                    }
+                }
+            }
         }
-    .button__content{
+    }
+
+    .button__content {
         display: flex;
         justify-content: center;
         margin: 30px;
-    }      
+    }
 }

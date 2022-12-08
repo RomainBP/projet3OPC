@@ -1,27 +1,31 @@
-.footer{
+.footer {
     padding: 20px;
-    background-color:#3c3a39;
-    .footer__logo{
+    background-color: #3c3a39;
+
+    .footer__logo {
         width: 100px;
         color: white;
     }
-    .footer__nav{
-        ul{
+
+    .footer__nav {
+        ul {
             list-style: none;
             padding: 0;
             font-size: small;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            .footer__nav__link{
+
+            .footer__nav__link {
                 display: flex;
                 align-items: center;
                 color: white;
                 gap: 10px;
+
                 p {
                     margin: 0;
                 }
             }
-        }    
+        }
     }
 }
